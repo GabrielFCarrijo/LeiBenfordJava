@@ -13,8 +13,8 @@ O programa lê um arquivo contendo números e calcula a distribuição dos prime
 
 1. Clone este repositório em sua máquina.
 2. Certifique-se de ter o Java e o Maven instalados em seu sistema.
-3. Crie um arquivo de texto chamado `numbers.txt` na mesma pasta do projeto.
-4. Adicione números, um por linha, ao arquivo `numbers.txt`.
+3. Crie um arquivo de texto chamado `LeiBenfordFile.txt` na mesma pasta do projeto.
+4. Adicione números, um por linha, ao arquivo `LeiBenfordFile.txt`.
 
 ### Recursos
 
