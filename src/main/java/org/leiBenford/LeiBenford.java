@@ -8,18 +8,13 @@ import org.jfree.data.category.DefaultCategoryDataset;
 
 import javax.swing.*;
 import java.awt.*;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
+import java.io.InputStream;
 import java.util.Scanner;
-import java.util.random.RandomGenerator;
 
 public class LeiBenford {
 
     public static void main(String[] args) {
-        int[] numbers = readNumbersFromFile("LeiBenfordFile.txt");
+        int[] numbers = readNumbersFromClasspath("leiBenfordFiles/LeiBenfordFile.txt");
         DefaultCategoryDataset dataset = createDataset(numbers);
 
         JFreeChart chart = createChart(dataset);
@@ -32,9 +27,10 @@ public class LeiBenford {
         frame.setVisible(true);
     }
 
-    private static int[] readNumbersFromFile(String fileName) {
+    private static int[] readNumbersFromClasspath(String filePath) {
         try {
-            Scanner scanner = new Scanner(new File(fileName));
+            InputStream inputStream = LeiBenford.class.getClassLoader().getResourceAsStream(filePath);
+            Scanner scanner = new Scanner(inputStream);
             int count = 0;
             while (scanner.hasNextInt()) {
                 count++;
@@ -42,17 +38,19 @@ public class LeiBenford {
             }
             int[] numbers = new int[count];
 
-            scanner = new Scanner(new File(fileName));
+            inputStream = LeiBenford.class.getClassLoader().getResourceAsStream(filePath);
+            scanner = new Scanner(inputStream);
             for (int i = 0; i < count; i++) {
                 numbers[i] = scanner.nextInt();
             }
 
             return numbers;
-        } catch (FileNotFoundException e) {
+        } catch (Exception e) {
             e.printStackTrace();
             return new int[0];
         }
     }
+
 
     private static DefaultCategoryDataset createDataset(int[] numbers) {
         DefaultCategoryDataset dataset = new DefaultCategoryDataset();
