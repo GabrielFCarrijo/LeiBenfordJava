@@ -1,6 +1,6 @@
 ## Lei de Benford Java Analyzer
 
-Este é um projeto em Java que demonstra a aplicação da Lei de Benford, também conhecida como Lei dos Números Anômalos, a conjuntos de dados numéricos. A Lei de Benford é uma observação estatística que descreve a distribuição dos primeiros dígitos em muitos conjuntos de dados do mundo real.
+Este é um projeto em Java que demonstra a aplicação da Lei de Benford, também conhecida como Lei dos Números Anômalos, a conjuntos de dados numéricos. A Lei de Benford é uma observação estatística que descreve a distribuição dos primeiros dígitos em muitos conjuntos de dados do mundo real. Fiz este projeto pois achei muito interessante como é usado e como os dados seguem essa teoria, tentei simplificar os testes caso queiram testar deixarei passo a passo abiaxo:
 
 ![5f933df7a15dd491a516b3a9__4jm26wdeo3R_PTqO1OwWZefKvE7FDEcOXhvsiykdGn9QkrJx9BbWUa0dN5lkaN_XEwmmHXjB1ssR6VHwMcco-A35zBknbaJUX3QiX0bj-5n-vkUBXgiUmwHgyRx4w](https://github.com/GabrielFCarrijo/LeiBenfordJava/assets/84852692/5701bbb4-1cb4-4ace-9b3a-549b53328fdf)
 
