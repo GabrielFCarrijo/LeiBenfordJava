@@ -20,6 +20,8 @@ public class LeiBenford {
         JFreeChart chart = createChart(dataset);
         ChartPanel chartPanel = new ChartPanel(chart);
 
+        System.out.println("teste");
+
         JFrame frame = new JFrame("Benford's Law Distribution");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().add(chartPanel, BorderLayout.CENTER);
